@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import React from 'react';
+import Navbar from "./Components/Navbar/Navbar";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header className="App-body">
+        <Navbar />
+      </header>
+      <body className='App-header'>
+      <img src={logo} className="App-logo" alt="logo" />
         <p>
           Alvaro 
         </p>
@@ -17,7 +21,7 @@ function App() {
         >
           Repositorio de github
         </a>
-      </header>
+      </body>
     </div>
   );
 }

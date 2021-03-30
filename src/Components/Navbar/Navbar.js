@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { MenuItems } from "./Menuitem";
 import './Navbar.css'
 import { Button } from "../Button";
+import { CartWidget } from './CartWidget'
         class Navbar extends Component{
             state = {clicked: false}
             handleclick = () => {
@@ -11,9 +12,9 @@ import { Button } from "../Button";
                 return(
                     <nav className="NavbarItems">
                         <h1 className="navbar-logo">wallealv</h1>
+                        <CartWidget />
                         <div className="menu-icon" onClick={this.handleclick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-
                         </div>
                         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu inactive'}>
                         {MenuItems.map((item, index)=> {
@@ -25,6 +26,7 @@ import { Button } from "../Button";
                         })}
                         </ul>
                         <Button>Subscribite</Button>
+                        
 
                     </nav>
                 )

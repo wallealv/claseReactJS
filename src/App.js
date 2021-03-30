@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Navbar from "./Components/Navbar/Navbar";
+import ItemListContainer from './Components/ItemListContainer'
 function App() {
   return (
     <div className="App">
       <header className="App-body">
         <Navbar />
+        <ItemListContainer grettings='hola' />
       </header>
       <body className='App-header'>
       <img src={logo} className="App-logo" alt="logo" />

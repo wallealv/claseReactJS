@@ -4,6 +4,7 @@ import React from 'react';
 import Navbar from "./Components/Navbar/Navbar";
 import ItemListContainer from './Components/ItemListContainer'
 import SimpleCard from './Components/Card/SimpleCard'
+import Contador from './Components/Card/Contador'
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
         
       </header>
       <SimpleCard></SimpleCard>
+      <Contador></Contador>
       <body className='App-header'>
       <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 import Navbar from "./Components/Navbar/Navbar";
 import ItemListContainer from './Components/ItemListContainer'
-import SimpleCard from './Components/Card/SimpleCard'
+import SimpleCard from './Components/Card/ItemListContainer'
 import Contador from './Components/Card/Contador'
 function App() {
   return (
